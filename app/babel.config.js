@@ -4,7 +4,11 @@ module.exports = function (api) {
 
   return {
     presets: ['babel-preset-expo'],
-    plugins: [['module:react-native-dotenv'], ['expo-router/babel']],
+    plugins: [
+      ['module:react-native-dotenv'],
+      ['expo-router/babel'],
+      ['react-native-reanimated/plugin'],
+    ],
     env: {
       production: {
         plugins: ['react-native-paper/babel'],

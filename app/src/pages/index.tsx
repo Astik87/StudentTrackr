@@ -1,8 +1,14 @@
-import React from 'react';
-import { Text } from 'react-native';
+import { Text } from 'react-native-paper';
+import { View } from 'react-native';
+import { Stack } from 'expo-router';
 
 const App = () => {
-  return <Text>Test test</Text>;
+  return (
+    <View>
+      <Stack.Screen options={{ title: 'Home' }} />
+      <Text>Hello</Text>
+    </View>
+  );
 };
 
 export default App;

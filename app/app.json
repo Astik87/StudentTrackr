@@ -1,19 +1,18 @@
 {
   "expo": {
-    "name": "client-app",
-    "slug": "client-app",
+    "name": "StudentTracker",
+    "slug": "StudentTracker",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "scheme": "myapp",
     "experiments": {
       "tsconfigPaths": true
     },
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -27,7 +26,8 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "blockedPermissions": ["android.permission.INTERNET"]
       }
     },
     "web": {
